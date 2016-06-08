@@ -45,14 +45,13 @@
 | the active record class
 */
 
-
 $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'pengaduan_user';
-$db['default']['password'] = '1q2w3e4r';
-$db['default']['database'] = 'pengaduan_db';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '';
+$db['default']['database'] = 'support_ticket';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

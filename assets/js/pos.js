@@ -120,7 +120,7 @@ function fconfig(target,refresh){
         success: function(html) {
 
             if(refresh==true){
-                //window.setTimeout(function(){location.reload()},2000);
+                window.setTimeout(function(){location.reload()},2000);
                 oTable.fnDraw();
             }
         }

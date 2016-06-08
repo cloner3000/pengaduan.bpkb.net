@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://pengaduan.bpkb.net/';
+$config['base_url']	= 'http://ticket.dev/';
 
 /*
 |--------------------------------------------------------------------------
@@ -244,7 +244,7 @@ $config['encryption_key'] = 'BJGJHFD57434678MKJHGGFDGNKAI';
 | 'sess_time_to_update'		= how many seconds between CI refreshing Session Information
 |
 */
-$config['sess_cookie_name']		= 'ticket_session';
+$config['sess_cookie_name']		= 'ci_session';
 $config['sess_expiration']		= 0;
 $config['sess_expire_on_close']	= FALSE;
 $config['sess_encrypt_cookie']	= FALSE;
