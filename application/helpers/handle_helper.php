@@ -13,9 +13,9 @@ if (!function_exists('backHandle')){
 function cleanString($string) {
 	$string = str_replace("&quot;","\"",$string);
 	$string = str_replace("&apos;","'",$string);
-	$string = str_replace("Â"," ",$string);
+	$string = str_replace("ï¿½"," ",$string);
 	$string = str_replace("\n"," ",$string);
-	$string = preg_replace('/[^a-zA-Z0-9-.:&#;,\/_\'…é"!’£?\[\]]/', ' ', $string);
+	$string = preg_replace('/[^a-zA-Z0-9-.:&#;,\/_\'ï¿½ï¿½"!ï¿½ï¿½?\[\]]/', ' ', $string);
 	$string = preg_replace('/\s\s+/', ' ', $string);
 	return $string;
 }
@@ -466,19 +466,13 @@ function generateRandomString($length = 5) {
 function send_mail($email,$password,$code){
    $ci = &get_instance();
       $config = Array(
-        'protocol' => 'smtp',
-        'smtp_host' => 'smtp.mandrillapp.com',
-        'smtp_port' => 587,
-        'smtp_user' => 'master.ardani@gmail.com',
-        'smtp_pass' => 'xR770McfBCG4cqWLvyMM0A',
-        'smtp_timeout' => '4',
         'mailtype'  => 'html',
         'charset'   => 'iso-8859-1'
     );
 
     $ci->load->library('email', $config);
     $ci->email->set_newline("\r\n");
-    $ci->email->from('admin@supportticket.com', 'admin');
+    $this->email->from('noreply@pengaduan.bpkb.net', 'Pengaduan Polda Metro Jaya');
     $ci->email->to("$email");
 
      $ci->email->subject('Email Corfirmation User Register');
@@ -500,19 +494,13 @@ function send_mail($email,$password,$code){
   function send_mail_password($email,$password){
    $ci = &get_instance();
       $config = Array(
-        'protocol' => 'smtp',
-        'smtp_host' => 'smtp.mandrillapp.com',
-        'smtp_port' => 587,
-        'smtp_user' => 'master.ardani@gmail.com',
-        'smtp_pass' => 'xR770McfBCG4cqWLvyMM0A',
-        'smtp_timeout' => '4',
         'mailtype'  => 'html',
         'charset'   => 'iso-8859-1'
     );
 
     $ci->load->library('email', $config);
     $ci->email->set_newline("\r\n");
-    $ci->email->from('admin@supportticket.com', 'admin');
+    $ci->email->from('noreply@pengaduan.bpkb.net', 'Pengaduan Polda Metro Jaya');
     $ci->email->to("$email");
 
      $ci->email->subject('Email Reset Password');

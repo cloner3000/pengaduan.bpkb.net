@@ -39,7 +39,7 @@ class Create_ticket extends CI_Controller
     );
     $result =  $this->create_ticket->save($param);
     if($result){
-      $this->email->from('pengaduan@'.$_SERVER['SERVER_NAME'], 'Pengaduan Polda Metro Jaya');
+      $this->email->from('noreply@pengaduan.bpkb.net', 'Pengaduan Polda Metro Jaya');
       $this->email->to( $this->session->userdata('email'));
       $this->email->subject('Pemberitahuan Pengaduan');
       $this->email->message('Pengaduan Anda telah kami terima,Kami akan merespond pengaduan Anda secepatnya. Terima Kasih');

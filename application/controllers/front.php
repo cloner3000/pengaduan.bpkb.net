@@ -77,7 +77,7 @@ class Front extends CI_Controller
      echo $this->knowledgebase->dataajax2();
   }
 
-  function send_mail(){
+  /*function send_mail(){
     $this->load->library('email');
     $this->email->from('your@example.com', 'Your Name');
     $this->email->to('master.ardani@gmail.com');
@@ -85,6 +85,6 @@ class Front extends CI_Controller
     $this->email->message('Testing the email class.');
     $this->email->send();
     echo $this->email->print_debugger();
-  }
+  }*/
 
 }

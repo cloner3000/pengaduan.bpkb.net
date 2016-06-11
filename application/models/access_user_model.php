@@ -57,19 +57,13 @@ class Access_user_model extends CI_Model{
 
     private function mail($email,$password,$code){
       $config = Array(
-        'protocol' => 'smtp',
-        'smtp_host' => 'smtp.mandrillapp.com',
-        'smtp_port' => 587,
-        'smtp_user' => 'master.ardani@gmail.com',
-        'smtp_pass' => 'xR770McfBCG4cqWLvyMM0A',
-        'smtp_timeout' => '4',
         'mailtype'  => 'html',
         'charset'   => 'iso-8859-1'
     );
 
     $this->load->library('email', $config);
     $this->email->set_newline("\r\n");
-    $this->email->from('admin@supportticket.com', 'admin');
+    $this->email->from('noreply@pengaduan.bpkb.net', 'Pengaduan Polda Metro Jaya');
     $this->email->to("$email");
 
      $this->email->subject('Email Corfirmation User Access');
