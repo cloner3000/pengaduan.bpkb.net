@@ -1,2 +1,5 @@
 .idea/
 attachment/
+*/config/database.php
+*/config/config.php
+index.php
