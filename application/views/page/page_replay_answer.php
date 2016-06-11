@@ -4,7 +4,7 @@
 <div class="widget-box">
   <div class="widget-title">
     <span class="icon"><i class="icon-th-list"></i></span>
-    <h5>Jawab Tiket</h5>
+    <h5>Jawab Pengaduan</h5>
   </div>
   <div class="widget-content">
   <?php
@@ -88,7 +88,7 @@
 <div class="widget-box">
   <div class="widget-title">
     <span class="icon"><i class="icon-th-list"></i></span>
-    <h5>Alihkan Tiket Ke <?php echo $departement?> </h5>
+    <h5>Alihkan Pengaduan Ke <?php echo $departement?> </h5>
   </div>
   <div class="widget-content">
   <?php
@@ -109,7 +109,7 @@
   </div>
   </div>
     <hr/>
-    <button type="submit" class='btn btn-primary'>Alihkan Tiket</button>
+    <button type="submit" class='btn btn-primary'>Alihkan Pengaduan</button>
     </form>
   </div>
   </div>
@@ -118,7 +118,7 @@
 <div class="widget-box">
   <div class="widget-title">
     <span class="icon"><i class="icon-th-list"></i></span>
-    <h5>History Tiket</h5>
+    <h5>History Pengaduan</h5>
   </div>
   <div class="widget-content">
   <table class="table table-condensed table-hover table-striped">

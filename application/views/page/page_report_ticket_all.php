@@ -51,7 +51,7 @@
   </tbody>
 </table>
 <hr>
-<h3>Grafik laporan Tiket <?=$proses_departement?></h3>
+<h3>Grafik laporan Pengaduan <?=$proses_departement?></h3>
 <canvas id="ctx" width="600" height="400"></canvas>
 <div class="chart-legend">
         <ul>

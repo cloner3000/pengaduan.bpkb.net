@@ -238,8 +238,8 @@ class Replay_ticket extends CI_Controller
 
     $this->email->from('pengaduan@'.$_SERVER['SERVER_NAME'], 'Pengaduan Polda Metro Jaya');
     $this->email->to($to);
-    $this->email->subject('Jawaban Tiket Pengaduan');
-    $this->email->message('Tiket pengaduan Anda sudah ada balasan silahkan cek di alamat ini '."<a href='$url'>klik disini</a>");
+    $this->email->subject('Jawaban Pengaduan');
+    $this->email->message('Pengaduan pengaduan Anda sudah ada balasan silahkan cek di alamat ini '."<a href='$url'>klik disini</a>");
     $this->email->send();
   }
 }

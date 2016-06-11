@@ -61,7 +61,7 @@ echo site_url("home") ?>" title="Go to Home" class="tip-bottom">
       <li> <a href="<?php
 echo site_url("knowledgebases") ?>"> <i class="icon-database"></i>Pengetahuan</a> </li>
       <li> <a href="<?php
-echo site_url("create_ticket") ?>"> <i class="icon-shopping-bag"></i> Buat Tiket</a> </li>
+echo site_url("create_ticket") ?>"> <i class="icon-shopping-bag"></i> Buat Pengaduan</a> </li>
       <li> <a href="<?php
 echo site_url("register_member") ?>"> <i class="icon-people"></i> Pengguna </a> </li>
       <li> <a href="<?php
@@ -78,7 +78,7 @@ echo site_url("report_ticket") ?>"> <i class="icon-survey"></i> Laporan </a> </l
         <div class="span3">
           <div class="widget-box">
             <div class="widget-title"><span class="icon"><i class="icon-file"></i></span>
-              <h5>Tiket Terakhir</h5>
+              <h5>Pengaduan Terakhir</h5>
             </div>
             <div class="widget-content">
             <table class="table table table-condensed table-hover table-striped">

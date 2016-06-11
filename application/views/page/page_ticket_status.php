@@ -20,14 +20,14 @@
 <div class="widget-box">
   <div class="widget-title">
   <span class="icon"><i class="icon-th-list"></i></span>
-    <h5>Data Status Tiket</h5>
+    <h5>Data Status Pengaduan</h5>
   </div>
   <div class="widget-content nopadding">
   <table class="data-table table table-condensed table-hover table-striped">
   <thead>
     <tr>
       <th width="8%">Check</th>
-      <th width="60%">Tiket Status</th>
+      <th width="60%">Pengaduan Status</th>
     </tr>
   </thead>
   <tbody>

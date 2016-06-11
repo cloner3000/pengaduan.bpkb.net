@@ -4,15 +4,15 @@
 <div class="widget-box">
   <div class="widget-title">
   <span class="icon"><i class="icon-th-list"></i></span>
-    <h5>Alihkan Tiket</h5>
+    <h5>Alihkan Pengaduan</h5>
   </div>
   <div class="widget-content nopadding">
   <table class="data-table table table-condensed table-hover table-striped">
   <thead>
     <tr>
       <th width="8%">Check</th>
-      <th width="8%">No Tiket</th>
-      <th width="8%">Tiket status</th>
+      <th width="8%">No Pengaduan</th>
+      <th width="8%">Pengaduan status</th>
       <th width="">Isi</th>
       <th width="8%">Terbitkan</th>
       <th width="8%">Tanggal</th>

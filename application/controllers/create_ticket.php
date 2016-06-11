@@ -41,7 +41,7 @@ class Create_ticket extends CI_Controller
     if($result){
       $this->email->from('pengaduan@'.$_SERVER['SERVER_NAME'], 'Pengaduan Polda Metro Jaya');
       $this->email->to( $this->session->userdata('email'));
-      $this->email->subject('Pemberitahuan Tiket Pengaduan');
+      $this->email->subject('Pemberitahuan Pengaduan');
       $this->email->message('Pengaduan Anda telah kami terima,Kami akan merespond pengaduan Anda secepatnya. Terima Kasih');
       $this->email->send();
     }

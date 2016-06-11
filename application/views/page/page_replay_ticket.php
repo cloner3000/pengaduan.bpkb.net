@@ -10,8 +10,8 @@
   <thead>
     <tr>
       <th width="8%">Check</th>
-      <th width="8%">No Tiket</th>
-      <th width="8%">Tiket status</th>
+      <th width="8%">No Pengaduan</th>
+      <th width="8%">Pengaduan status</th>
       <th width="">Isi</th>
       <th width="8%">Terbit</th>
       <th width="8%">Tanggal</th>

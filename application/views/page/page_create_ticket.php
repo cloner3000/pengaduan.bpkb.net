@@ -2,7 +2,7 @@
 <div class="widget-box">
   <div class="widget-title">
     <span class="icon"><i class="icon-th-list"></i></span>
-    <h5>Buat Tiket</h5>
+    <h5>Buat Pengaduan</h5>
   </div>
   <div class="widget-content">
 <div id="pesan"></div>

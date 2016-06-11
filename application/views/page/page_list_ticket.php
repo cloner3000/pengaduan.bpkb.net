@@ -35,7 +35,7 @@
   <thead>
     <tr>
       <th width="8%">S</th>
-      <th width="8%">ID Tiket</th>
+      <th width="8%">ID Pengaduan</th>
       <th width="">Judul</th>
       <th width="8%">Operator</th>
       <th width="8%">Departement</th>

@@ -27,7 +27,7 @@
   <thead>
     <tr>
       <th width="8%">Check</th>
-      <th width="60%">Prioritas Tiket</th>
+      <th width="60%">Prioritas Pengaduan</th>
     </tr>
   </thead>
   <tbody>

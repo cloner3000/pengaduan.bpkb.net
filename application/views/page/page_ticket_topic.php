@@ -27,7 +27,7 @@
   <thead>
     <tr>
       <th width="8%">Check</th>
-      <th width="60%">Tiket Topik</th>
+      <th width="60%">Pengaduan Topik</th>
     </tr>
   </thead>
   <tbody>

@@ -8,8 +8,8 @@
   <table class="data-table table table-condensed table-hover table-striped">
   <thead>
     <tr>
-      <th width="8%">NO Tiket</th>
-      <th width="8%">Status Tiket</th>
+      <th width="8%">NO Pengaduan</th>
+      <th width="8%">Status Pengaduan</th>
       <th width="">Isi</th>
       <th width="8%">Terbit</th>
       <th width="8%">Tanggal</th>
