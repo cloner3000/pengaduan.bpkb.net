@@ -20,6 +20,20 @@ function cleanString($string) {
 	return $string;
 }
 
+function message_json($message = '',$code = 200, $data = array()) {
+    $ci =& get_instance();
+    $status = ($code == 200) ? true : false;
+    $respond = array(
+        'status' => $status,
+        'message' => $message,
+        'data' => $data
+    );
+
+    $ci->output->set_status_header($code)
+        ->set_content_type('application/json')
+        ->set_output(json_encode($respond));
+}
+
 function reviewdata($arrdata){
    echo "<pre>";
     print_r($arrdata);

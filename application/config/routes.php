@@ -41,5 +41,20 @@
 $route['default_controller'] = "front";
 $route['404_override'] = '';
 
+// route for mobile app web view
+$route['app'] = 'app_main/index';
+$route['app/data'] = 'app_main/data';
+$route['app/notification'] = 'app_notification/index';
+$route['app/notification/data'] = 'app_notification/data';
+$route['app/knowledge'] = 'app_knowledge/index';
+$route['app/knowledge/data'] = 'app_knowledge/data';
+$route['app/auth'] = 'app_auth/index';
+$route['app/auth/view_change_password'] = 'app_auth/view_change_password';
+$route['app/auth/action_change_password'] = 'app_auth/action_change_password';
+$route['app/auth/login'] = 'app_auth/login';
+$route['app/auth/logout'] = 'app_auth/logout';
+$route['app/replay_ticket'] = 'app_replay_ticket/detail';
+$route['app/replay_ticket/replay'] = 'app_replay_ticket/replay';
+$route['app/replay_ticket/(:any)'] = 'app_replay_ticket/detail';
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

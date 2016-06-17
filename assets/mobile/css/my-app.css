@@ -1,0 +1,32 @@
+.user-avatar img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.user-avatar {
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.infinite-scroll-preloader {
+  margin-top:-20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.infinite-scroll-preloader .preloader {
+  width:34px;
+  height:34px;
+}
+
+.item-date {
+  font-size: 10px !important;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+}

@@ -58,4 +58,6 @@ class List_ticket extends CI_Controller{
       $id = $this->input->post("id");
       $data = $this->list_ticket->delete($id);
     }
+
+    
 }

@@ -40,6 +40,34 @@ class Userauth extends CI_Model {
         }
     }
 
+    function login_mobile($username, $pass) {
+        $log_user = $this->CI->db->query("SELECT * FROM ticket_user
+        WHERE email = '$username' AND password ='$pass' AND actived='1' AND type_id = '3'");
+        if ($log_user->num_rows() == 1) {
+            foreach ($log_user->result() as $row) {
+                $id     = $row->uuid;
+                $nama   = $row->full_name;
+                $tipe   = $row->type_id;
+                $deptid = $row->departement_id;
+            }
+            $this->db->where('uuid', $row->uuid);
+            $this->db->update('ticket_user', array('last_login' => date('Y-m-d H:i')));
+            $user_ses = array(
+                'userid' => $id,
+                'name'   => $nama,
+                'tipe'   => $tipe,
+                'deptid' => $deptid,
+                'email'  => $username
+            );
+            $this->CI->session->set_userdata($user_ses);
+
+            return TRUE;
+        }
+        else {
+            return FALSE;
+        }
+    }
+
     function logout() {
         $this->session->sess_destroy();
         redirect('login');
@@ -56,6 +84,16 @@ class Userauth extends CI_Model {
     function restrict() {
         if ($this->is_logged_in() == FALSE) {
             redirect('login');
+        }
+    }
+
+    function restrict_mobile() {
+        if ($this->is_logged_in() == FALSE) {
+            message_json('Pengguna tidak diijinkan akses. silahkan login terlebih dahulu',400);
+            exit();
+        } else if ($this->CI->session->userdata('tipe') != 3) {
+            message_json('Pengguna tidak diijinkan akses. silahkan login terlebih dahulu',400);
+            exit();
         }
     }
 
@@ -93,7 +131,8 @@ class Userauth extends CI_Model {
         $data = array(
             'userid' => $this->session->userdata("userid"),
             'name'   => $this->session->userdata("name"),
-            'tipe'   => $this->session->userdata("tipe")
+            'tipe'   => $this->session->userdata("tipe"),
+            'deptid'   => $this->session->userdata("deptid")
         );
 
         return $data;

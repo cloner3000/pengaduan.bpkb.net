@@ -26,7 +26,7 @@ class Replay_ticket_model extends CI_Model{
         ->edit_column('date','$1','datetimes(date)');
       return  $this->datatables->generate();
     }
-
+    
     function save($data){
       if($data['status_id'] != ''){
 			$this->db->where('status_id',$data['status_id']);

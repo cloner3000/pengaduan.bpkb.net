@@ -83,4 +83,39 @@ class Knowledgebase_model extends CI_Model{
             echo 'success';
         }
     }
+
+    function api($page = 1,$json = false) {
+        $total = $this->get_all();
+        $perpage = 20;
+        $page = empty($page) ? 0 : $page - 1;
+        $page = $page*$perpage;
+        $this->db
+            ->select('uuid,title,created,updated,content')
+            ->order_by('created','DESC')
+            ->limit($perpage,$page)
+            ->from("ticket_knowledgebase");
+        $query = $this->db->get();
+        $data = array();
+        if ($query->num_rows() > 0) {
+            foreach ($query->result_array() as $row) {
+                $data[] = $row;
+            }
+        }
+
+        $respond = array(
+            'knowledge' => $data,
+            'total' => $total
+        );
+
+        if ($json) {
+            return message_json('',200,$respond);
+        } else {
+            return $respond;
+        }
+    }
+
+    function get_all() {
+        $total_data = $this->db->from("ticket_knowledgebase")->get();
+        return $total_data->num_rows();
+    }
 }
